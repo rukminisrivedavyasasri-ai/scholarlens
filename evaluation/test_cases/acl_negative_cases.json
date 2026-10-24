@@ -1,0 +1,29 @@
+[
+  {
+    "case_id": "acl-neg-01",
+    "description": "Viewer cannot query or retrieve passages from restricted document in another workspace",
+    "user_email": "viewer_bob@university.edu",
+    "user_role": "viewer",
+    "target_document_id": "doc-vance-restricted-01",
+    "expected_access": "denied",
+    "expected_status_code": 403
+  },
+  {
+    "case_id": "acl-neg-02",
+    "description": "Unauthorized user cannot access raw PDF stream or page bounding boxes",
+    "user_email": "unauthorized_eve@competitor.com",
+    "user_role": "guest",
+    "target_document_id": "doc-vance-restricted-01",
+    "expected_access": "denied",
+    "expected_status_code": 403
+  },
+  {
+    "case_id": "acl-neg-03",
+    "description": "Viewer cannot export board items from collections they lack permission for",
+    "user_email": "viewer_bob@university.edu",
+    "user_role": "viewer",
+    "target_workspace_id": "ws-private-02",
+    "expected_access": "denied",
+    "expected_status_code": 403
+  }
+]

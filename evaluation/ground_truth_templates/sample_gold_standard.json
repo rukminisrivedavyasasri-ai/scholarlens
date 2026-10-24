@@ -1,0 +1,89 @@
+{
+  "document_id": "doc-vance-2024",
+  "title": "Adaptive Closed-Loop Cognitive Intervention Protocols: A Multi-Center Randomized Trial",
+  "authors": "Evelyn Vance, Marcus Sterling, H. R. Okafor",
+  "year": 2024,
+  "doi": "10.1038/s41598-024-8192-x",
+  "pdf_filename": "vance_2024_adaptive_cognition.pdf",
+  "extracted_fields": {
+    "objective": {
+      "gold_text": "Evaluate whether dynamic stimulus-difficulty adaptation improves 12-week protocol retention compared to matched static difficulty in adults with mild cognitive impairment.",
+      "is_unavailable": false,
+      "page_number": 1,
+      "gold_excerpt": "The primary objective of this trial was to formally evaluate whether closed-loop cognitive load adaptation produces superior 12-week adherence compared to standard non-titrated clinical software regimes."
+    },
+    "methodology": {
+      "gold_text": "Double-blind, multicenter randomized controlled trial with 1:1 allocation to active closed-loop titration vs fixed linear difficulty over 12 weeks.",
+      "is_unavailable": false,
+      "page_number": 2,
+      "gold_excerpt": "480 eligible adults... allocated 1:1 into two arms: Arm A (closed-loop automated titration, n=240) and Arm B (fixed linear difficulty progression, n=240)."
+    },
+    "population": {
+      "gold_text": "480 adults aged 18-65 with diagnosed mild cognitive impairment (MoCA 22-25; 54.2% female, 45.8% male) across four academic health centers.",
+      "is_unavailable": false,
+      "page_number": 2,
+      "gold_excerpt": "480 eligible adults (mean age 54.2 ± 8.1 years; 54.2% female, 45.8% male) with confirmed early Mild Cognitive Impairment (MoCA 22–25)..."
+    },
+    "findings": {
+      "gold_text": "Adaptive cohort achieved 92.4% retention vs 78.1% in static arm (OR=3.14, 95% CI [1.81, 5.44], p<0.001). Cognitive fatigue reduction significant only in baseline severe fatigue subgroup.",
+      "is_unavailable": false,
+      "page_number": 3,
+      "gold_excerpt": "participants in the adaptive closed-loop cohort achieved a 92.4% retention rate (222/240) at week 12, compared to 78.1% (187/240) in the static control group (Odds Ratio = 3.14, p < 0.001)."
+    },
+    "limitations": {
+      "gold_text": "Unavailable in document",
+      "is_unavailable": true,
+      "unavailable_reason": "Authors omitted drop-out survival curves, long-term persistence beyond 12 weeks, and adverse headache logs.",
+      "page_number": 4,
+      "gold_excerpt": "Several key parameters were uncollected in this trial: long-term persistence beyond 12 weeks was not assessed, and adverse sensory complaints such as migraine or tension headache occurrences were not monitored or recorded in participant journals."
+    }
+  },
+  "ground_truth_qa_pairs": [
+    {
+      "question_id": "q-1",
+      "question": "What was the 12-week retention rate in the adaptive arm versus control?",
+      "is_unanswerable": false,
+      "abstention_expected": false,
+      "expected_answer_summary": "Adaptive arm achieved 92.4% (222/240) vs 78.1% (187/240) in control, OR 3.14.",
+      "expected_claims": [
+        {
+          "claim_text": "The adaptive protocol achieved 92.4% 12-week retention compared to 78.1% in static controls (p < 0.001).",
+          "expected_verification_status": "supported",
+          "gold_citations": [
+            {
+              "page_number": 3,
+              "verbatim_excerpt": "In the intention-to-treat analysis, participants in the adaptive closed-loop cohort achieved a 92.4% retention rate (222/240) at week 12, compared to 78.1% (187/240) in the static control group (Odds Ratio = 3.14, 95% Confidence Interval [1.81, 5.44], p < 0.001)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q-2",
+      "question": "Did all participants experience statistically significant cognitive fatigue reduction?",
+      "is_unanswerable": false,
+      "abstention_expected": false,
+      "expected_answer_summary": "No, fatigue reduction was only statistically significant in patients with baseline severe fatigue (VAS-F > 65); unstratified cohort showed non-significant difference.",
+      "expected_claims": [
+        {
+          "claim_text": "Cognitive fatigue reduction was statistically significant only in the severe baseline subgroup, and non-significant cohort-wide.",
+          "expected_verification_status": "supported",
+          "gold_citations": [
+            {
+              "page_number": 3,
+              "verbatim_excerpt": "Secondary analyses showed a statistically significant reduction in post-session cognitive fatigue only among participants with baseline severe fatigue (VAS-F baseline > 65, adjusted difference -14.2 points, p = 0.021). For the overall cohort without elevated baseline fatigue, the between-group difference in fatigue was non-significant (p = 0.18)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q-3",
+      "question": "What was the 1-year economic cost-effectiveness per quality-adjusted life year (QALY)?",
+      "is_unanswerable": true,
+      "abstention_expected": true,
+      "expected_answer_summary": "The authorized document lacks sufficient evidence: the study terminated at 12 weeks and collected no economic or QALY data.",
+      "expected_claims": []
+    }
+  ]
+}

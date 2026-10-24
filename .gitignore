@@ -1,0 +1,13 @@
+﻿backend_venv/
+venv/
+node_modules/
+.next/
+__pycache__/
+*.pyc
+.env
+*.db
+*.sqlite3
+uploads/
+storage/
+.pytest_cache/
+*.log
